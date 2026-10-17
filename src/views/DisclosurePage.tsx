@@ -9,7 +9,7 @@ export function DisclosurePage() {
     <>
       <Seo
         title="Affiliate Disclosure"
-        description="Affiliate disclosure for Velora and Amazon Associates."
+        description="Affiliate disclosure for Styliqs and Amazon Associates."
         canonicalPath="/disclosure"
       />
       <div className="container-shop py-8 md:py-12 max-w-3xl">

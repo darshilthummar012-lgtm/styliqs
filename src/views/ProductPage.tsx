@@ -149,13 +149,6 @@ export function ProductPage() {
               {product.description}
             </p>
 
-            {product.isDemo && (
-              <p className="mt-3 text-xs border border-border bg-bg-secondary px-3 py-2">
-                Sample product for demonstration. Prices and Amazon links are
-                placeholders — replace with researched data before publishing.
-              </p>
-            )}
-
             {product.colors.length > 0 && (
               <div className="mt-6">
                 <p className="text-sm font-medium mb-2">Colors</p>

@@ -51,12 +51,6 @@ export function ProductCard({ product }: ProductCardProps) {
           </span>
         )}
 
-        {product.isDemo && (
-          <span className="absolute bottom-2 left-2 border border-border bg-bg/95 px-1.5 py-0.5 text-[10px] text-text-secondary">
-            Sample
-          </span>
-        )}
-
         <button
           type="button"
           aria-label={wished ? 'Remove from wishlist' : 'Add to wishlist'}

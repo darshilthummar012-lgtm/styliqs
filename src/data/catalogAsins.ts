@@ -8,7 +8,7 @@ import type {
 
 /**
  * Curated Amazon catalog for live Creators API mode.
- * Add products by ASIN (+ optional Velora category metadata).
+ * Add products by ASIN (+ optional category metadata).
  * When AMAZON_* credentials are set, the server fetches live title/price/images.
  *
  * Find ASIN on any Amazon product URL: /dp/B0XXXXXXXX or /gp/product/B0XXXXXXXX
@@ -42,7 +42,7 @@ export interface CatalogEntry {
 
 /**
  * Start with real ASINs from amazon.in once you have Creators API access.
- * Leave empty to use the local sample catalog in products.ts as fallback.
+ * Leave empty to use the local catalog in products.ts as fallback.
  */
 export const catalogAsins: CatalogEntry[] = [
   // Example (replace with your researched clothing ASINs):

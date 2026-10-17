@@ -65,7 +65,7 @@ export function SearchPage() {
     <>
       <Seo
         title={`Search: ${q}`}
-        description={`Search results for ${q} in the Velora clothing catalog.`}
+        description={`Search results for ${q} in the Styliqs clothing catalog.`}
         canonicalPath={`/search?q=${encodeURIComponent(q)}`}
       />
       <ProductListing

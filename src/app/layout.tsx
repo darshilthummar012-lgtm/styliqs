@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   },
   description: storeConfig.description,
   icons: {
-    icon: '/velora-logo.png',
-    apple: '/velora-logo.png',
+    icon: '/styliqs-logo.png',
+    apple: '/styliqs-logo.png',
   },
 }
 
@@ -41,7 +41,7 @@ export default function RootLayout({
           <Suspense
             fallback={
               <div className="flex min-h-screen items-center justify-center text-sm text-text-secondary">
-                Loading Velora…
+                Loading Styliqs…
               </div>
             }
           >

@@ -23,7 +23,7 @@ export function AmazonButton({
   showHint = true,
 }: AmazonButtonProps) {
   const url = getAmazonDestination(product)
-  const label = product.isDemo ? 'View on Amazon (Demo)' : 'View on Amazon'
+  const label = 'View on Amazon'
   const base =
     'inline-flex items-center justify-center gap-2 font-medium tracking-[0.03em] transition-colors'
 
@@ -56,7 +56,6 @@ export function AmazonButton({
       {showHint && (
         <p className="mt-1.5 text-xs text-text-secondary">
           You&apos;ll be redirected to Amazon to view current purchasing options.
-          {product.isDemo ? ' Demo catalog link.' : ''}
         </p>
       )}
     </div>

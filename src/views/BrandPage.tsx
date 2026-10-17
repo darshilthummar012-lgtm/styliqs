@@ -27,7 +27,7 @@ export function BrandPage() {
     <>
       <Seo
         title={brandName}
-        description={`Shop ${brandName} clothing from the Velora catalog.`}
+        description={`Shop ${brandName} clothing from the Styliqs catalog.`}
         canonicalPath={`/brands/${slug}`}
       />
       <ProductListing

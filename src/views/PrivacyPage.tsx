@@ -9,7 +9,7 @@ export function PrivacyPage() {
     <>
       <Seo
         title="Privacy Policy"
-        description="Privacy policy for Velora."
+        description="Privacy policy for Styliqs."
         canonicalPath="/privacy"
       />
       <div className="container-shop py-8 md:py-12 max-w-3xl">

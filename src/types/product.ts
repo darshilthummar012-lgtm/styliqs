@@ -61,7 +61,6 @@ export interface Product {
   isFeatured?: boolean
   isNewArrival?: boolean
   isEditorsPick?: boolean
-  isDemo?: boolean
   keywords?: string[]
   care?: string
 }

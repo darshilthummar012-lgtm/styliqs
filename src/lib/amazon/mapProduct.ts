@@ -31,7 +31,7 @@ function pickListing(item: CreatorsItem) {
   )
 }
 
-/** Map a Creators API item into Velora Product shape. */
+/** Map a Creators API item into Styliqs Product shape. */
 export function mapCreatorsItemToProduct(
   item: CreatorsItem,
   meta?: CatalogEntry,
@@ -105,7 +105,6 @@ export function mapCreatorsItemToProduct(
     isFeatured: meta?.isFeatured,
     isNewArrival: meta?.isNewArrival,
     isEditorsPick: meta?.isEditorsPick,
-    isDemo: false,
     keywords: meta?.keywords || [title, brand, item.asin],
     care: meta?.care,
   }

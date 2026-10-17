@@ -1,4 +1,4 @@
-# Velora — Fashion Product Discovery (Next.js)
+# Styliqs — Fashion Product Discovery (Next.js)
 
 Amazon affiliate-style clothing discovery storefront.
 
@@ -54,7 +54,7 @@ Edit `src/data/catalogAsins.ts` — add one entry per product:
 
 When credentials + ASINs are set, `/api/amazon/catalog` fetches live title, images, price, and affiliate `detailPageURL` from Amazon. “View on Amazon” uses that URL.
 
-If API is not configured (or ASINs empty), the site uses the sample catalog in `src/data/products.ts`.
+If API is not configured (or ASINs empty), the site uses the local catalog in `src/data/products.ts`.
 
 ### Server API routes
 

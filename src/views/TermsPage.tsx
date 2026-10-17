@@ -9,7 +9,7 @@ export function TermsPage() {
     <>
       <Seo
         title="Terms and Conditions"
-        description="Terms and conditions for using Velora."
+        description="Terms and conditions for using Styliqs."
         canonicalPath="/terms"
       />
       <div className="container-shop py-8 md:py-12 max-w-3xl">
@@ -34,11 +34,6 @@ export function TermsPage() {
             images — is provided as supplied in local data and may be outdated
             or inaccurate relative to the retailer. Always confirm details on
             Amazon before buying.
-          </p>
-          <p>
-            Sample or demonstration products are clearly marked and must not be
-            treated as live shopping offers until replaced with researched,
-            authorized product data.
           </p>
           <p>
             We are not responsible for Amazon&apos;s products, pricing, shipping,

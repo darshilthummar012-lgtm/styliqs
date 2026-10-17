@@ -23,7 +23,7 @@ export function ProductImage({
         aria-label={alt || 'Image unavailable'}
       >
         <img
-          src="/velora-logo.png"
+          src="/styliqs-logo.png"
           alt=""
           className="h-5 w-auto max-w-[72px] object-contain opacity-35"
         />

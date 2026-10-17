@@ -97,12 +97,6 @@ export function HomePage() {
         </div>
       </section>
 
-      <div className="border-b border-border bg-bg-secondary/70">
-        <p className="container-shop py-2.5 text-[11px] leading-relaxed text-text-secondary">
-          {storeConfig.demo.notice}
-        </p>
-      </div>
-
       <section className="bg-bg py-10 md:py-14">
         <div className="container-shop">
           <div className="mb-7 flex items-end justify-between gap-4 md:mb-9">
