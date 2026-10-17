@@ -1,0 +1,112 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f7f6f2;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #6f6f6f;
+  --color-border: #e8e6e1;
+  --color-accent: #a08968;
+  --color-accent-deep: #866747;
+  --color-sale: #b43c35;
+  --color-success: #28784a;
+  --font-display: 'DM Sans', system-ui, sans-serif;
+  --font-body: 'Manrope', system-ui, sans-serif;
+  --font-brand: 'Cormorant Garamond', 'Times New Roman', serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-text font-body antialiased;
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent-deep;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  .container-shop {
+    @apply mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-10;
+  }
+
+  .brand-wordmark {
+    font-family: var(--font-brand);
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .section-heading {
+    @apply font-display text-[1.625rem] md:text-[2rem] font-semibold tracking-tight text-text;
+  }
+
+  .section-kicker {
+    @apply text-[11px] uppercase tracking-[0.18em] text-accent-deep font-medium;
+  }
+}
+
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content > * {
+  animation: hero-fade-up 0.75s ease-out both;
+}
+
+.hero-content > *:nth-child(1) {
+  animation-delay: 0.04s;
+}
+
+.hero-content > *:nth-child(2) {
+  animation-delay: 0.12s;
+}
+
+.hero-content > *:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.hero-content > *:nth-child(4) {
+  animation-delay: 0.28s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-content > * {
+    animation: none;
+  }
+}
